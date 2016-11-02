@@ -1,0 +1,29 @@
+{
+  "name": "basepackage",
+  "version": "1.1.0",
+  "description": "",
+  "author": "teraguchi",
+  "url": "",
+  "license": "MIT License",
+  "keywords": "gulp",
+  "devDependencies": {
+    "browser-sync": "^2.17.5",
+    "browserify": "^13.1.1",
+    "es6-promise": "^4.0.5",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean-css": "^2.0.13",
+    "gulp-concat": "^2.6.0",
+    "gulp-csscomb": "^3.0.8",
+    "gulp-csslint": "^1.0.0",
+    "gulp-jshint": "^2.0.2",
+    "gulp-minify-html": "^1.0.6",
+    "gulp-plumber": "*",
+    "gulp-rename": "^1.2.2",
+    "gulp-ruby-sass": "^1.0.5",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^2.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "vinyl-transform": "^1.0.0"
+  }
+}
