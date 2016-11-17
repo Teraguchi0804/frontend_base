@@ -23,7 +23,7 @@ var autoPrefixer = require('gulp-autoprefixer');
 //if node version is lower than v.0.1.2
 require('es6-promise').polyfill();
 var cleanCss = require('gulp-clean-css');
-var jshint = require('gulp-jshint');
+// var jshint = require('gulp-jshint');
 var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
 var minifyHtml = require('gulp-minify-html');
@@ -64,7 +64,7 @@ gulp.task('js.browserify',function(){
     })
         .bundle()
         .pipe(source('index.js'))
-        .pipe(jshint())
+//         .pipe(jshint())
         .pipe(gulp.dest('./dist/js'))
 });
 

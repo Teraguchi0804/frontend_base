@@ -1,11 +1,13 @@
 {
   "name": "basepackage",
   "version": "1.1.0",
-  "description": "",
+  "description": "<gulpタスク> 詳細はgulpfile.jsを参照",
   "author": "teraguchi",
   "url": "",
-  "license": "MIT License",
-  "keywords": "gulp",
+  "license": "UNLICENSED",
+  "keywords": [
+    "gulp"
+  ],
   "devDependencies": {
     "browser-sync": "^2.17.5",
     "browserify": "^13.1.1",
@@ -16,14 +18,26 @@
     "gulp-concat": "^2.6.0",
     "gulp-csscomb": "^3.0.8",
     "gulp-csslint": "^1.0.0",
-    "gulp-jshint": "^2.0.2",
+//     "gulp-jshint": "^2.0.3",
     "gulp-minify-html": "^1.0.6",
     "gulp-plumber": "*",
     "gulp-rename": "^1.2.2",
-    "gulp-ruby-sass": "^1.0.5",
+    "gulp-ruby-sass": "^1.4.0",
     "gulp-sass": "^2.3.2",
     "gulp-uglify": "^2.0.0",
     "vinyl-source-stream": "^1.1.0",
     "vinyl-transform": "^1.0.0"
-  }
+  },
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://Teraguchi0804@github.com/Teraguchi0804/frontend_base.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Teraguchi0804/frontend_base/issues"
+  },
+  "homepage": "https://github.com/Teraguchi0804/frontend_base#readme"
 }
