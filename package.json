@@ -14,23 +14,31 @@
     "es6-promise": "^4.0.5",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
+    "gulp-cache": "*",
     "gulp-clean-css": "^2.0.13",
     "gulp-concat": "^2.6.0",
     "gulp-csscomb": "^3.0.8",
     "gulp-csslint": "^1.0.0",
-//     "gulp-jshint": "^2.0.3",
+    "gulp-imagemin": "^3.0.1",
+    "gulp-jshint": "^2.0.4",
     "gulp-minify-html": "^1.0.6",
     "gulp-plumber": "*",
     "gulp-rename": "^1.2.2",
     "gulp-ruby-sass": "^1.4.0",
     "gulp-sass": "^2.3.2",
     "gulp-uglify": "^2.0.0",
+    "gulp-webpack": "^1.1.2",
+    "imagemin-pngquant": "^5.0.0",
+    "jshint": "^2.9.4",
+    "jshint-stylish": "^2.0.1",
     "vinyl-source-stream": "^1.1.0",
-    "vinyl-transform": "^1.0.0"
+    "vinyl-transform": "^1.0.0",
+    "webpack": "^1.13.3"
   },
   "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -39,5 +47,8 @@
   "bugs": {
     "url": "https://github.com/Teraguchi0804/frontend_base/issues"
   },
-  "homepage": "https://github.com/Teraguchi0804/frontend_base#readme"
+  "homepage": "https://github.com/Teraguchi0804/frontend_base#readme",
+  "dependencies": {
+    "jquery": "^3.1.1"
+  }
 }
