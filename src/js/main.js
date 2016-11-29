@@ -1,5 +1,5 @@
 $(function(){
 
-var testvar = 1111;
+var testvar = 1000;
 
 });//jquery

@@ -10,23 +10,11 @@ module.exports = {
     new webpack.ProvidePlugin({
       jQuery: 'jquery',
       $: "jquery"
+    }),
+    new webpack.optimize.UglifyJsPlugin({
+      compress: {
+        warnings: false
+      }
     })
   ]
-  // plugins: [
-  //   new webpack.ProvidePlugin(
-  //       {
-  //         jQuery: "jquery",
-  //         $: "jquery",
-  //         _: "underscore",
-  //         Backbone: "backbone",
-  //         Marionette: "backbone.marionette"
-  //       }
-  //   )
-  //   ,
-  //   new webpack.optimize.UglifyJsPlugin({
-  //     compress: {
-  //       warnings: false
-  //     }
-  //   })
-  // ]
 };
