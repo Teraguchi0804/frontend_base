@@ -5,6 +5,7 @@ module.exports = {
   output: {
     filename: 'index.js'
   },
+  devtool: 'source-map',
   //グローバル変数にjQueryを配置する
   plugins: [
     new webpack.ProvidePlugin({
@@ -17,4 +18,5 @@ module.exports = {
       }
     })
   ]
+
 };

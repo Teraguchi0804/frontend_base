@@ -39,21 +39,19 @@ gulp.task('sass', function () {
           this.emit('end');
         }
       }))
-      .pipe(sass())
+      .pipe(sass({
+        outputStyle: 'compressed'
+      }))
       .pipe(autoPrefixer())
       .pipe(csslint())
       .pipe(concat('index.css'))
-      .pipe(gulp.dest('dist/css'))
-      .pipe(rename({
-        suffix: '.min'
-      }))
       .pipe(cleanCss())
       .pipe(gulp.dest('dist/css'))
 });
 
 
 //------------------------------------------------------------------------------------------
-// index.htmlファイルを圧縮してdistデイレクトリ内へindex.htmlとしてビルド
+// /src/index.htmlファイルを圧縮してdistデイレクトリ内へindex.htmlとしてビルド
 //------------------------------------------------------------------------------------------
 gulp.task('html', function () {
   gulp.src(['src/**/*.html'])

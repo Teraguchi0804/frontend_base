@@ -1,4 +1,7 @@
-#【Webフロントエンド開発環境ベース】
+# Front-end-template
 
-<gulpタスク>
-詳細はgulpfile.jsを参照
+**開発準備**
+
+```
+$ npm i
+```
