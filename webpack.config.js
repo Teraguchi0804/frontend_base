@@ -14,8 +14,10 @@ module.exports = {
     }),
     new webpack.optimize.UglifyJsPlugin({
       compress: {
-        warnings: false
-      }
+        warnings: false,
+        //cosnoleを取り除く
+        drop_console: true
+}
     })
   ]
 
