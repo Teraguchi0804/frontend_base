@@ -6,19 +6,28 @@ module.exports = {
     filename: 'index.js'
   },
   devtool: 'source-map',
-  //グローバル変数にjQueryを配置する
+  module: {
+    loaders: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: 'babel'
+      }
+    ]
+  },
   plugins: [
+    //グローバル変数にjQueryを配置する
     new webpack.ProvidePlugin({
       jQuery: 'jquery',
       $: "jquery"
-    }),
+    })
+    ,
     new webpack.optimize.UglifyJsPlugin({
       compress: {
         warnings: false,
         //cosnoleを取り除く
-        drop_console: true
-}
+        drop_console: false
+      }
     })
   ]
-
 };

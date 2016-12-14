@@ -9,6 +9,10 @@
     "gulp"
   ],
   "devDependencies": {
+    "babel": "^6.1.18",
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.8",
+    "babel-preset-es2015": "^6.18.0",
     "browser-sync": "^2.17.5",
     "es6-promise": "^4.0.5",
     "gulp": "^3.9.1",
@@ -43,6 +47,7 @@
   },
   "homepage": "https://github.com/Teraguchi0804/frontend_base#readme",
   "dependencies": {
-    "jquery": "^3.1.1"
+    "jquery": "^3.1.1",
+    "three": "^0.82.1"
   }
 }
