@@ -5,7 +5,10 @@ module.exports = {
   output: {
     filename: 'index.js'
   },
-  devtool: 'source-map',
+  //cacheをオン
+  cache: true,
+  //watchモードの設定
+  watch: true,
   module: {
     loaders: [
       {
@@ -29,5 +32,7 @@ module.exports = {
         drop_console: false
       }
     })
-  ]
+  ],
+  //ソースマップ排出の設定
+  devtool: '#source-map'
 };
